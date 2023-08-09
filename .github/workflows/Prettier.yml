@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@v3.7.0
 
       - name: Install Dependencies
-        run: npm install
+        run: npm i prettier
 
       - name: Run Prettier
         run: npx prettier --write .
