@@ -21,6 +21,16 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Set Environment Variables
+        run: |
+          echo "VITE_FIREBASE_APIKEY=${{ secrets.VITE_FIREBASE_APIKEY }}" >> .env
+          echo "VITE_FIREBASE_AUTHDOMAIN=${{ secrets.VITE_FIREBASE_AUTHDOMAIN }}" >> .env
+          echo "VITE_FIREBASE_PROJECTID=${{ secrets.VITE_FIREBASE_PROJECTID }}" >> .env
+          echo "VITE_FIREBASE_STORAGEBUCKET=${{ secrets.VITE_FIREBASE_STORAGEBUCKET }}" >> .env
+          echo "VITE_FIREBASE_MESSAGINGSENDERID=${{ secrets.VITE_FIREBASE_MESSAGINGSENDERID }}" >> .env
+          echo "VITE_FIREBASE_APPID=${{ secrets.VITE_FIREBASE_APPID }}" >> .env
+          echo "VITE_FIREBASE_MEASUREMENTID=${{ secrets.VITE_FIREBASE_MEASUREMENTID }}" >> .env
+
       - name: Build Application
         run: npm run build
 
