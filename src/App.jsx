@@ -52,7 +52,7 @@ export default function App() {
                 user ? <Profile /> : <Navigate to="/Firebase-Testing-00/Login" />
               }
             />
-            <Route path="*" element={<Error />} />
+            <Route path="/Firebase-Testing-00/*" element={<Error />} />
           </Routes>
         </>
       )}
