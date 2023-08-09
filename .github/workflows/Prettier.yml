@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@Latest
+        uses: actions/checkout@latestLatest
 
       - name: Setup Node.js
-        uses: actions/setup-node@Latest
+        uses: actions/setup-node@latestlatestLatest
 
       - name: Install Dependencies
         run: npm install
