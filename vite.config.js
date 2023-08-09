@@ -2,6 +2,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-	base: "/Firebase-Testing-00/",
-	plugins: [react()],
+  base: "/Firebase-Testing-00/",
+  plugins: [react()],
 });
