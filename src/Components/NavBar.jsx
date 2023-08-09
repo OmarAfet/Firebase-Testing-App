@@ -10,7 +10,10 @@ const NavBar = () => {
   return (
     <>
       <div className="flex flex-wrap justify-between mx-[10%] my-2">
-        <Link className="hover:shadow-lg rounded-lg p-2" to={"Firebase-Testing-00/Home"}>
+        <Link
+          className="hover:shadow-lg rounded-lg p-2"
+          to={"Firebase-Testing-00/Home"}
+        >
           Home
         </Link>
         <Link
