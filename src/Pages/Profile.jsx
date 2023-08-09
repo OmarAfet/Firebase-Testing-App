@@ -79,7 +79,7 @@ const Profile = () => {
                   src={
                     newPhotoURLPreview ||
                     userPhotoURL ||
-                    "/Images/Default Profile Picture.png"
+                    "./Images/Default Profile Picture.png"
                   }
                   alt="Profile Picture"
                 />
