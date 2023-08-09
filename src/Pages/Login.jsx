@@ -19,7 +19,7 @@ const Login = () => {
     setIsLoading(true);
     const isLogIn = await LogIn(loginInputs.email, loginInputs.password);
     if (isLogIn) {
-      navigate("/Profile");
+      navigate("/Firebase-Testing-00/Profile");
     }
     setIsLoading(false);
   };
@@ -104,7 +104,7 @@ const Login = () => {
                 Don't have an account?
                 <div
                   onClick={() => {
-                    navigate("/Signup");
+                    navigate("/Firebase-Testing-00/Signup");
                   }}
                   className="hover:text-black underline cursor-pointer"
                 >
