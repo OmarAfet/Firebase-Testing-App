@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  transition:
+    all 300ms,
+    color 30ms;
+  outline: none;
+  @apply placeholder:select-none;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+img {
+  user-select: none;
+}
