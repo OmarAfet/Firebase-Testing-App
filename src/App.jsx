@@ -28,7 +28,7 @@ export default function App() {
         <>
           <NavBar />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/Firebase-Testing-00" element={<Home />} />
             <Route path="/Firebase-Testing-00/Home" element={<Home />} />
             <Route
               path="/Firebase-Testing-00/Login"
