@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout
+        uses: actions/checkout@main
 
       - name: Setup Node.js
-        uses: actions/setup-node
+        uses: actions/setup-node@main
 
       - name: Install Dependencies
         run: npm install
@@ -33,7 +33,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages
+        uses: peaceiris/actions-gh-pages@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
