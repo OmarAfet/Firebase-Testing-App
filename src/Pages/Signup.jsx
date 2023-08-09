@@ -31,7 +31,7 @@ const Signup = () => {
       signUpInputs.confirm_password,
     );
     if (isSignUp) {
-      navigate("/Firebase-Testing-00/Profile");
+      navigate("/Profile");
     }
     setIsSignupLoading(false);
   };
@@ -165,7 +165,7 @@ const Signup = () => {
             Already have an account?
             <div
               onClick={() => {
-                navigate("/Firebase-Testing-00/Login");
+                navigate("/Login");
               }}
               className="hover:text-black underline cursor-pointer"
             >

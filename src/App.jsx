@@ -28,31 +28,31 @@ export default function App() {
         <>
           <NavBar />
           <Routes>
-            <Route path="/Firebase-Testing-00" element={<Home />} />
-            <Route path="/Firebase-Testing-00/Home" element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
             <Route
-              path="/Firebase-Testing-00/Login"
+              path="/Login"
               element={
-                user ? <Navigate to="/Firebase-Testing-00/Profile" /> : <Login />
+                user ? <Navigate to="/Profile" /> : <Login />
               }
             />
             <Route
-              path="/Firebase-Testing-00/Signup"
+              path="/Signup"
               element={
                 user ? (
-                  <Navigate to="/Firebase-Testing-00/Profile" />
+                  <Navigate to="/Profile" />
                 ) : (
                   <Signup />
                 )
               }
             />
             <Route
-              path="/Firebase-Testing-00/Profile"
+              path="/Profile"
               element={
-                user ? <Profile /> : <Navigate to="/Firebase-Testing-00/Login" />
+                user ? <Profile /> : <Navigate to="/Login" />
               }
             />
-            <Route path="/Firebase-Testing-00/*" element={<Error />} />
+            <Route path="/*" element={<Error />} />
           </Routes>
         </>
       )}

@@ -12,27 +12,27 @@ const NavBar = () => {
       <div className="flex flex-wrap justify-between mx-[10%] my-2">
         <Link
           className="hover:shadow-lg rounded-lg p-2"
-          to={"/Firebase-Testing-00/Home"}
+          to={"/Home"}
         >
           Home
         </Link>
         <Link
           hidden={!user}
           className="hover:shadow-lg rounded-lg p-2"
-          to={"/Firebase-Testing-00/Profile"}
+          to={"/Profile"}
         >
           Profile
         </Link>
         <Link
           hidden={user}
           className="hover:shadow-lg rounded-lg p-2"
-          to={"/Firebase-Testing-00/Login"}
+          to={"/Login"}
         >
           Login
         </Link>
         <Button
           onClick={() => {
-            navigate("/Firebase-Testing-00/Signup");
+            navigate("/Signup");
           }}
           hidden={user}
           className="hover:shadow-lg rounded-lg p-2"
@@ -42,7 +42,7 @@ const NavBar = () => {
           onClick={async () => {
             const isLogout = await Logout();
             if (isLogout) {
-              navigate("/Firebase-Testing-00/Login");
+              navigate("/Login");
             }
           }}
           hidden={!user}
