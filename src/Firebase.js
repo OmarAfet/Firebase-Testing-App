@@ -58,6 +58,11 @@ export const fetchUserData = () => {
 
 // Signup Function
 export const SignUp = async (email, username, password, confirm_password) => {
+  if ( !password.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,32}$/)) {
+    toast.error("Invalid Password");
+    return;
+  }
+
   try {
     if (!email || !username || !password || !confirm_password) {
       toast.error("Please fill in all fields");

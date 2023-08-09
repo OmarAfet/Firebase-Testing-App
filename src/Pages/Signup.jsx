@@ -109,7 +109,7 @@ const Signup = () => {
           <div className="flex items-center gap-2">
             <div
               className={`w-2 h-2 ${
-                /[!@#$%^&*()-_=+]/.test(signUpInputs.password)
+                /[!@#$%^&*()_=+]/.test(signUpInputs.password)
                   ? "bg-green-500"
                   : "bg-red-500"
               } rounded-full`}
@@ -131,7 +131,7 @@ const Signup = () => {
           <div className="flex items-center gap-2">
             <div
               className={`w-2 h-2 ${
-                /^(?=.*[a-z])(?=.*[A-Z])/.test(signUpInputs.password)
+                /(?=.*[a-z])(?=.*[A-Z])/.test(signUpInputs.password)
                   ? "bg-green-500"
                   : "bg-red-500"
               } rounded-full`}
